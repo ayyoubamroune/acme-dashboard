@@ -8,6 +8,14 @@ export type User = {
   email: string;
   password: string;
 };
+export type State = {
+  errors?: {
+    customerId?: string[];
+    amount?: string[];
+    status?: string[];
+  };
+  message?: string | null;
+};
 
 export type Customer = {
   id: string;
